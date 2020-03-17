@@ -28,13 +28,14 @@
     "dev-mode": "webpack-dev-server",
     "postinstall": "npm i -g live-server html-validate jshint",
     "run-webpack": "webpack --mode production",
-    "build": "npm-run-all validate-html jshint stylelint run-webpack"
+    "build": "npm-run-all validate-html run-webpack"
   },
   "browserslist": "> 0.25%, not dead",
   "author": "Cherednichenko Alexey",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
